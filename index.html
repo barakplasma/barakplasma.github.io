@@ -1,13 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>blett</title>
+</head>
+
 <select onchange="if (this.value) window.location.href=this.value2">
     <option value="">Pick one:</option>
     <option value="/foo">Foo</option>
     <option value="/bar">Bar</option>
     var value2 = "http://www.netflix.com/browse/genre/"+value;
 </select>
-<!DOCTYPE html>
-<html lang="en-US" prefix="og: http://ogp.me/ns#" prefix="og: http://ogp.me/ns#">
-<head>
-<meta charset="UTF-8"/>
+
 <script type="text/javascript">
 var options = {
   valueNames: [ 'name', 'born' ]
@@ -15,6 +19,9 @@ var options = {
 
 var userList = new List('users', options);
 </script>
+
+<body>
+Content of the document......
 
 <div id="users">
   <input class="search" placeholder="Search" />
@@ -45,3 +52,5 @@ var userList = new List('users', options);
 
 </div>
 <script src="http://listjs.com/no-cdn/list.js"></script>
+</body>
+</html>
