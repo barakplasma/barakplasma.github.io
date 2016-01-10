@@ -5,6 +5,12 @@
     var value2 = "http://www.netflix.com/browse/genre/"+value;
 </select>
 
+var options = {
+  valueNames: [ 'name', 'born' ]
+};
+
+var userList = new List('users', options);
+
 <div id="users">
   <input class="search" placeholder="Search" />
   <button class="sort" data-sort="name">
